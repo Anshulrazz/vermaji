@@ -1,0 +1,170 @@
+#color {
+    color: #ff4081;
+}
+
+.nav-item .current-color {
+    background-color: #ff4080b6;
+}
+
+.ab,
+.abc {
+    width: 50%;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.ab {
+    margin-left: 60px;
+}
+
+.abc {
+    margin-left: 20px;
+}
+
+dotlottie-player {
+    filter: drop-shadow(30px 20px 40px #ff4081);
+    width: 500px;
+    height: 500px;
+}
+
+#about {
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    background-color: #ffffff00;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+}
+
+.abtxt {
+    margin-left: 190px;
+    color: #fff;
+    line-height: 1.2;
+    margin-top: 150px;
+}
+
+.abtxt p {
+    font-family: "Yatra One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    margin: 10px 0;
+}
+.coler{
+    color: #ff4081;
+    font-size: 24px;
+    text-shadow: 2px 2px 14px #ff4081;
+    display: none;
+}
+
+#col {
+    color: #ff4081;
+    text-shadow: 3px 2px 5px #ff4081;
+    transition: font-size 0.5s ease;
+}
+
+#col:hover {
+    font-size: 1.1em;
+}
+
+.intro,
+.edu {
+    font-family: "Yatra One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 28px;
+    margin-top: 90px;
+}
+
+.intro {
+    margin-left: 30px;
+}
+
+.edu {
+    margin-left: 160px;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+
+    .ab,
+    .abc {
+        width: 45%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    dotlottie-player {
+        height: 350px;
+        width: 320px;
+    }
+    .coler{
+        display: block;
+        align-self: center;
+        text-align: center;
+    }
+    .abtxt {
+        margin-left: 0;
+        text-align: center;
+        margin-top: 40px;
+    }
+
+    .abtxt p {
+        font-size: 32px;
+    }
+    #col{
+        display: none;
+    }
+    .intro,
+    .edu {
+        margin-left: 0;
+        text-align: center;
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 768px) {
+    #about {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ab,
+    .abc {
+        width: 80%;
+    }
+
+    .abtxt {
+        margin-top: 40px;
+    }
+
+    .abtxt p {
+        font-size: 28px;
+    }
+
+    .intro,
+    .edu {
+        margin-left: 0;
+        text-align: center;
+        font-size: 20px;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .ab,
+    .abc {
+        width: 100%;
+    }
+
+    .abtxt p {
+        font-size: 24px;
+    }
+
+    .intro,
+    .edu {
+        font-size: 18px;
+    }
+}

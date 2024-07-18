@@ -1,0 +1,79 @@
+.project-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.project-item {
+    width: 100%;
+    max-width: 300px;
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid transparent;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+    border-top: 3px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 3px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+
+}
+
+.project-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.project-item h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: #ff4081;
+}
+
+.project-item .blgs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.project-item .over {
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #fff;
+    line-height: 1.5;
+}
+
+.project-item .image {
+    height: 150px;
+    width: 100%;
+    max-width: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.project-item a {
+    display: inline-block;
+    padding: 8px 16px;
+    border: 1px solid #007bff;
+    border-radius: 8px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.project-item a:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
