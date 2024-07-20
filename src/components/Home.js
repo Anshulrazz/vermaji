@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './css/home.css';
-
+import ansh from './img/ansh.jpg'
 const Home = () => {
     const [isShow, setIsShow] = useState(false);
 
@@ -16,7 +16,8 @@ const Home = () => {
         <>
             <section className="home">
                 <div className="hm">
-                    <dotlottie-player src="https://lottie.host/3e17394e-6340-4567-b715-68d19e57a09d/wsKb7Xprks.json" speed="1" loop autoplay></dotlottie-player>
+                   <img src={ansh} alt="" className='blr' /> 
+                   <img src={ansh} alt="" className='blr' /> 
                 </div>
                 <div className="txt">
                     <p>Hii!</p>

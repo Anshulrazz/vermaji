@@ -4,7 +4,25 @@ dotlottie-player {
     height: 500px;
     width: 500px;
 }
+.blr{
+    height: 400px;
+    width: 320px;
 
+}
+.blr:first-child{
+    position: relative;
+    height: 420px;
+    width: 340px;
+    border-radius: 6px;
+    filter: blur(20px);
+    opacity: 0.5;
+}
+.blr:last-child{
+    position: relative;
+    border-radius: 6px;
+    right: 260px;
+    top: 30px;
+}
 .home {
     display: flex;
     justify-content: space-between;
@@ -18,8 +36,7 @@ dotlottie-player {
 }
 
 .hm {
-    width: 45%;
-    text-align: center;
+    box-sizing: border-box;
 }
 
 .txt {
