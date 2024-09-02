@@ -40,4 +40,18 @@
     height: 100%; /* Fill the modal content area */
     border: none;
   }
-  
+    @media (max-width: 768px) {
+    .modal-content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: fixed;
+      z-index: 1000;
+      height: 400px;
+      width: 250px;
+      left: 60px;
+      top: 200px;
+      background-color: #fff;
+      animation: fadeIn 0.3s ease-in-out;
+    }
+  }
