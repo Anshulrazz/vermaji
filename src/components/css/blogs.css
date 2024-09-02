@@ -1,0 +1,98 @@
+dotlottie-player {
+    filter: drop-shadow(30px 20px 40px #ff4081);
+    width: 500px;
+    height: 500px;
+}
+
+.colblogs {
+    color: #ff4081;
+}
+
+.blogsec {
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    background-color: #ffffff00;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+}
+
+.abtxt {
+    margin-left: 40px;
+    color: #fff;
+    line-height: 1.2;
+    margin-top: 90px;
+}
+
+.abtxt p {
+    font-family: "Yatra One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    margin: 10px 0;
+}
+
+strong{
+    font-size: 30px;
+    color: #ff4081;
+    text-shadow: 2px 2px 14px;
+}
+
+
+
+
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    dotlottie-player {
+        width: 350px;
+        height: 350px;
+    }
+
+    .abtxt {
+        margin-left: 20px;
+        margin-top: 60px;
+    }
+
+    .abtxt p {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 768px) {
+    .blogsec {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    dotlottie-player {
+        width: 300px;
+        height: 300px;
+    }
+
+    .abtxt {
+        margin-left: 0;
+        text-align: center;
+        margin-top: 40px;
+    }
+
+    .abtxt p {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 480px) {
+
+
+    .abtxt {
+        margin-left: 0;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .abtxt p {
+        font-size: 24px;
+    }
+}

@@ -1,0 +1,255 @@
+/* General Styles */
+dotlottie-player {
+    filter: drop-shadow(30px 20px 40px #ff4081);
+    height: 500px;
+    width: 500px;
+}
+.blr{
+    height: 400px;
+    width: 320px;
+
+}
+.blr:first-child{
+    position: relative;
+    height: 420px;
+    width: 340px;
+    border-radius: 6px;
+}
+.home {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    background-color: #ffffff00;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+}
+
+.hm {
+    box-sizing: border-box;
+}
+
+.txt {
+    width: 45%;
+    color: #fff;
+    line-height: 1.2;
+}
+
+.txt p {
+    font-family: "Yatra One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    margin: 10px 0;
+}
+
+button {
+    background-color: #ff4081;
+    border: 2px solid #ff4081;
+    color: #ffffff;
+    font-family: "Yatra One", system-ui;
+    font-size: 28px;
+    border-radius: 12px;
+    cursor: pointer;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button:hover {
+    background-color: transparent;
+}
+
+#color {
+    color: #ff4081;
+}
+
+/* Popup Styles */
+.popup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+.popup-content {
+    background: linear-gradient(135deg, #683b4a62, #ff79b155);
+    padding: 30px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 500px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    font-family: 'Yatra One', system-ui;
+    color: white;
+    animation: slideIn 0.3s ease-in-out;
+    position: relative;
+}
+
+.close {
+    color: white;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #ccc;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.popup-content form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-start;
+    color: white;
+}
+
+.popup-content form label {
+    font-size: 18px;
+}
+
+.popup-content form input[type="email"],
+.popup-content form input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    font-family: "Yatra One", system-ui;
+    background-color: rgba(255, 255, 255, 0.327);
+    border: 2px solid #ff408057;
+    border-radius: 5px;
+    margin-top: 5px;
+    font-size: 16px;
+}
+
+.popup-content form input[type="email"]:focus,
+.popup-content form input[type="text"]:focus {
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.327);
+    box-shadow: 0 0 5px rgba(255, 64, 129, 0.5);
+}
+
+.popup-content form button {
+    align-self: center;
+    background-color: #ff4081;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.popup-content form button:hover {
+    background-color: #ff4081;
+    color: #e7e4e5;
+    border: 2px solid #ff4081;
+}
+
+@keyframes fadeIn {
+    from {
+        background-color: rgba(0, 0, 0, 0);
+    }
+    to {
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.itr {
+    display: none;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    dotlottie-player {
+        height: 350px;
+        width: 320px;
+    }
+
+    .txt {
+        margin-left: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .txt p {
+        font-size: 32px;
+    }
+
+    .hm {
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    .itr {
+        display: block;
+        text-align: center;
+        font-size: 38px;
+        text-shadow: 2px 2px 14px;
+        color: #ff4081;
+    }
+}
+
+@media (max-width: 768px) {
+    .home {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hm {
+        width: 80%;
+        margin-left: 0;
+    }
+
+    .txt {
+        width: 80%;
+        margin: 20px 0;
+        text-align: center;
+    }
+
+    .txt p {
+        font-size: 28px;
+    }
+
+    .itr {
+        display: block;
+        text-align: center;
+        font-size: 38px;
+        text-shadow: 2px 2px 14px;
+        color: #ff4081;
+    }
+}
+
+@media (max-width: 480px) {
+    .hm {
+        width: 100%;
+    }
+
+    .txt p {
+        font-size: 24px;
+    }
+}

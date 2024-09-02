@@ -1,0 +1,123 @@
+footer {
+    background-color: #ffffff1f;
+    background: rgba(255, 255, 255, 0.058);
+    backdrop-filter: blur(5px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    color: #fff;
+    text-align: center;
+}
+
+.cont-footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 0;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.links, .abt, .social {
+    flex: 1;
+    margin: 0;
+    min-width: 200px;
+}
+
+.links {
+    text-align: left;
+}
+
+.links h3, .abt h3, .social h3 {
+    font-size: 1.2em;
+    text-transform: uppercase;
+}
+
+.links ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.links li {
+    margin: 5px 0;
+}
+
+.links a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+    position: relative;
+    padding-left: 20px;
+}
+
+.links a::before {
+    content: '>';
+    color: #f90;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.5em;
+}
+
+.links a:hover {
+    color: #ddd;
+}
+
+.abt p {
+    padding-top: 30px;
+    font-size: 0.9em;
+    line-height: 1.6;
+}
+
+.subscribe {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.subscribe input[type="email"] {
+    padding: 10px;
+    border: 2px solid #f90;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    color: #ddd;
+    background-color: #3333336e;
+    flex: 1;
+}
+
+.subscribe button.email {
+    padding: 10px;
+    border: 1px #f90 solid;
+    background-color: #f90;
+    color: #fff;
+    font-size: 24px;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.subscribe button.email:hover {
+    background-color: transparent;
+}
+
+.social a {
+    margin: 0 10px;
+    color: #f90;
+    font-size: 1.5em;
+    transition: transform 0.3s;
+}
+
+.social a:hover {
+    transform: scale(1.1);
+}
+
+.footer-bottom {
+    background-color: #ae68682a;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.footer-bottom p {
+    font-size: 0.9em;
+    margin: 0;
+}

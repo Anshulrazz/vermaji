@@ -1,0 +1,68 @@
+div.flx{
+    display: flex;
+}
+.project-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.project-item {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    width: 300px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.project-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.project-item h2 {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.project-item p {
+    font-size: 1em;
+    color: #666;
+}
+
+form.form {
+    display: flex;
+    flex-direction: column;
+    background: #ffffff6a;
+    width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form.form input,
+form.form textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: rgba(0, 255, 255, 0.284);
+}
+
+form.form button {
+
+    padding: 10px;
+    font-size: 1em;
+    background-color: #f90;
+    color: #fff;
+    border: 2px #f90 solid;
+    border-radius: 5px;
+    cursor: pointer;
+}

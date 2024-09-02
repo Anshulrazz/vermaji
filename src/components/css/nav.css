@@ -1,0 +1,137 @@
+/* Importing Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+*{
+    font-family: "Yatra One", system-ui;
+}
+body {
+    font-family: "Yatra One", system-ui;
+    margin: 0;
+    padding: 0;
+    background-image: url('https://wallpapercave.com/wp/wp2757874.gif');
+    background-size: cover;
+    color: #ffffff;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    position:sticky;
+    align-items: center;
+    background-color: #ffffff1f;
+    background: rgba(255, 255, 255, 0.058);
+    backdrop-filter: blur(5px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    margin-right: 10px;
+}
+
+.name {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.name h3 {
+    margin: 0;
+    font-size: 24px;
+}
+
+nav {
+    flex-grow: 1;
+}
+
+.nav-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-item {
+    margin: 0;
+    padding: 0;
+}
+
+.nav-item a {
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    background-color: #333333;
+    border-radius: 8px;
+    margin: 0 5px;
+    font-weight: 400;
+}
+
+.nav-item a:hover {
+    background-color: #ff4081;
+}
+
+.color {
+    color: #ff4081;
+}
+
+.nav-item a:active {
+    background-color: #ff4081;
+}
+
+.menu-button {
+    display: none;
+    font-size: 28px;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .logo {
+        display: flex;
+        flex-direction: row;
+    }
+    .name{
+        margin-right: 70px;
+    }
+    .nav-list {
+        display: none;
+        margin-top: 90px;
+        flex-direction: column;
+        background-color: #1f1f1f;
+        width: 100%;
+    }
+    .nav-list.show{
+        display: list-item;
+    }
+    .nav-item {
+        width: 100%;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .menu-button {
+        display: block;
+    }
+
+    .nav-list.active {
+        display: flex;
+    }
+    .e{
+        margin-bottom: 290px;
+    }
+}

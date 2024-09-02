@@ -1,0 +1,17 @@
+
+.open-modal-button {
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 40px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1001;
+}
+
+.open-modal-button:hover {
+  background-color: #e68a00;
+}

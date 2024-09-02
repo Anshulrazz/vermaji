@@ -1,0 +1,150 @@
+.nav-item .current-color {
+    background-color: #ff4080b6;
+}
+
+dotlottie-player {
+    filter: drop-shadow(30px 20px 40px #ff4081);
+}
+
+.about {
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    background-color: #ffffff00;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.abtxt {
+    margin-left: 40px;
+    color: #fff;
+    line-height: 1.2;
+    margin-top: 90px;
+
+}
+
+.abtxt p {
+    font-family: "Yatra One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    margin: 10px 0;
+
+}
+
+
+.skl {
+    color: #ff4081;
+    text-align: center;
+    font-size: 28px;
+}
+
+.col {
+    color: #ff4081;
+}
+
+.skills-row {
+    display: flex;
+    justify-content: space-around;
+}
+
+.Web-Development {
+    background: #15151587;
+    color: aliceblue;
+    border-radius: 8px;
+    margin-top: 10px;
+    backdrop-filter: blur(5px);
+    margin-left: 40px;
+    margin-bottom: 30px;
+    padding: 20px;
+    flex: 1 1 30%;
+    max-width: 22%;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    animation: hologram 3s infinite;
+}
+
+.Backend-Development {
+    background: #15151587;
+    color: aliceblue;
+    border-radius: 8px;
+    margin-top: 10px;
+    margin-left: 40px;
+    margin-bottom: 30px;
+    padding: 20px;
+    backdrop-filter: blur(5px);
+    flex: 1 1 30%;
+    max-width: 22%;
+    text-align: center;
+    transition: transform 0.4s, box-shadow 0.2s;
+    animation: hologram 4s infinite;
+}
+
+.Database-Management {
+    background: #15151587;
+    color: aliceblue;
+    backdrop-filter: blur(5px);
+    border-radius: 8px;
+    margin-top: 10px;
+    margin-left: 40px;
+    backdrop-filter: blur(5px);
+    margin-bottom: 30px;
+    padding: 20px;
+    flex: 1 1 30%;
+    max-width: 22%;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.2s;
+    animation: hologram 2s infinite;
+}
+
+@keyframes hologram {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.Web-Development:hover,
+.Backend-Development:hover,
+.Database-Management:hover {
+    transform: translateY(-5px);
+    box-shadow: 2px 8px 16px rgba(100, 98, 98, 0.2);
+}
+
+.skill-meter span {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.skill-meter progress {
+    width: 100%;
+    height: 20px;
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    background: #e0e0e048;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.skill-meter progress::-webkit-progress-bar {
+    background: #e0e0e031;
+}
+
+.skill-meter progress::-webkit-progress-value {
+    background: linear-gradient(90deg, rgba(255, 64, 129, 1) 0%, rgba(255, 105, 135, 1) 50%, rgba(255, 152, 0, 1) 100%);
+    box-shadow: 0 0 10px rgba(255, 64, 129, 0.5), 0 0 20px rgba(255, 64, 129, 0.3), 0 0 30px rgba(255, 64, 129, 0.2);
+}
+
+.skill-meter progress::-moz-progress-bar {
+    background: linear-gradient(90deg, rgba(255, 64, 129, 1) 0%, rgba(255, 105, 135, 1) 50%, rgba(255, 152, 0, 1) 100%);
+    box-shadow: 0 0 10px rgba(255, 64, 129, 0.5), 0 0 20px rgba(255, 64, 129, 0.3), 0 0 30px rgba(255, 64, 129, 0.2);
+}
